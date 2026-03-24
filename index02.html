@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de dados - DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <main>
+<h1>login</h1>
+<input id="input" placeholder="Nome">
+<button onclick="login()">Enviar</button>
+<p id="mensagem">Saída</p>
+</main>
+
+
+<script>
+function login(){
+
+
+    let senhaDigitada = document.querySelector("#input").value;
+let senha= "2901";
+    if(senhaDigitada==senha){
+        document.querySelector("#mensagem").textContent="Logando...";
+    }else{
+        document.querySelector("#mensagem").textContent="Senha incorreta...";
+    }
+
+    }
+
+</script>
+    <script src="app.js"></script>
+</body>
+
+</html>
