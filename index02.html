@@ -10,6 +10,8 @@
 <body>
  <main>
 <h1>login</h1>
+<!-- <input> cria campo placeholder - nome dentro formulário-->
+
 <input id="input" placeholder="Nome">
 <button onclick="login()">Enviar</button>
 <p id="mensagem">Saída</p>
@@ -17,8 +19,8 @@
 
 
 <script>
-function login(){
-
+function login(){       // value passa o valor do input
+                        // quando for input utiliza value
 
     let senhaDigitada = document.querySelector("#input").value;
 let senha= "2901";
