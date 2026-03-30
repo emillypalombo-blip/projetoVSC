@@ -1,13 +1,10 @@
-let frases=["A fé é a certeza das coisas que se esperam",
-"O choro pode durar uma noite, mas a alegria vem pela manhã.",
-"Aqueles que esperam no Senhor renovam as suas forças."];
+let frases=["F1", "F2","F3"];
 
 function geradorMensagem(){
 let indiceGerado= Math.floor(Math.random()*(frases.length));
 let fraseGerada= frases[indiceGerado];
-document.querySelector("#saída").textContent=fraseGerada;
-
-
+console.log(fraseGerada)
 
 
 }
+geradorMensagem()
